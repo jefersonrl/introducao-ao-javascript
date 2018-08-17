@@ -2,14 +2,26 @@
 <html>
 	<head>
 		<title>Javascript</title>
+		<style>
+			#myImage{
+				position: absolute;
+				top: 100px;
+				left: 50%;
+			}
+		</style>
 		<script>
-			function myFunction() {
-				document.getElementById("demo").innerHTML = "Eu adoro PWI";
+			function trocaImagem() {
+				document.getElementById("myImage").src="html-logo-badge-512.png";
+			}
+			function imagemTroca() {
+				document.getElementById("myImage").src="js-logo-badge-512.png";
 			}
 		</script>
 	</head>
 	<body>
-		<button onclick="myFunction()">Clique aqui!</button>
-		<p id="demo"></p>
+		<button id="botao_imagem" onclick="trocaImagem()">Imagem 1</button>
+		<button id="botao_imagem" onclick="imagemTroca()">Imagem 2</button>
+		<img id="myImage" src="js-logo-badge-512.png" style="width:100px">
 	</body>
 </html>
+
