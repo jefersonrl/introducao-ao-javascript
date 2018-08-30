@@ -1,0 +1,13 @@
+body{
+	font-family: arial;
+	font-size: 12pt;
+}
+input, select{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#form{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
